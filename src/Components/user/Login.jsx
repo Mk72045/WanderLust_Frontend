@@ -8,7 +8,7 @@ function Login() {
     console.log("data is submitted", data);
 
     try {
-      const response = await axios.post("http://localhost:8080/login", {
+      const response = await axios.post("https://wanderlust-backend-4f5f.onrender.com/login", {
         email: data.email,
         password: data.password,
       });

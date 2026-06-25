@@ -13,7 +13,7 @@ function SignUp() {
   const submitHandle = async (data) => {
     try {
       const res = await axios.post(
-        "http://localhost:8080/signup",
+        "https://wanderlust-backend-4f5f.onrender.com/signup",
         {
           username: data.username,
           email: data.email,
