@@ -4,7 +4,7 @@ import axios from "axios";
 
 function New() {
   async function mySubmitHandler(data) {
-    await axios.post("http://localhost:8080/newListing", {
+    await axios.post("https://wanderlust-backend-4f5f.onrender.com/newListing", {
       title: data.title,
       description: data.description,
       price: data.price,

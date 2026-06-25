@@ -9,7 +9,7 @@ function Show() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/show/${id}`)
+      .get(`https://wanderlust-backend-4f5f.onrender.com/show/${id}`)
       .then((res) => {
         setListing(res.data.listing);
       })
@@ -35,7 +35,9 @@ function Show() {
       <div className="mt-8">
         <button
           className="px-4 py-1 text-red-400 rounded-xl border-2 border-red-400 mx-4"
-          onClick={() => navigate(`/show/${id}/edit`, {state: {listing: listing}})}
+          onClick={() =>
+            navigate(`/show/${id}/edit`, { state: { listing: listing } })
+          }
         >
           Edit
         </button>

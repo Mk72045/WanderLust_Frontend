@@ -8,7 +8,7 @@ function Edit() {
   // console.log(listing._id);
 
   async function mySubmitHandler(data) {
-    axios.put(`http://localhost:8080/show/${listing._id}/edit`, {
+    axios.put(`https://wanderlust-backend-4f5f.onrender.com/show/${listing._id}/edit`, {
       title: data.title,
       description: data.description,
       price: data.price,

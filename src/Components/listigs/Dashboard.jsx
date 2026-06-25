@@ -15,7 +15,7 @@ function Dasboard() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/")
+      .get("https://wanderlust-backend-4f5f.onrender.com/")
       .then((res) => {
         // console.log(res.data);
         setAllListings(res.data);
